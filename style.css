@@ -1,0 +1,16 @@
+body {
+    background-color: wheat;
+}
+
+.progress-bar {
+    width: 20%;
+    height: 30px;
+    margin: 50px;
+    background-color: rgb(161, 168, 168);
+}
+
+.bar {
+    background-color: rgb(218, 42, 218);
+    height: 100%;
+    width: 0%;
+}

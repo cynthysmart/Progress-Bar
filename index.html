@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Progress Bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="progress-bar">
+        <div class="bar" />
+    </div>
+
+    <button onclick="fillBar(5)">Start</button>
+
+    <script>
+        function fillBar(secs) {
+            const bar = document.querySelector(".bar");
+            let currentPercent = 0;
+            const interval = setInterval(() => {
+                bar.style.width = currentPercent + "%";
+                currentPercent++;
+                if (currentPercent >= 100) {
+                    clearInterval(interval);
+                }
+            }, (secs * 100)/ 100)
+
+        }
+    </script>
+    
+
+</body>
+</html>
